@@ -1,0 +1,401 @@
+html {
+  scroll-behavior: smooth;
+  transition: 0.3s all;
+}
+body{
+	font-family: 'Source Sans Pro', sans-serif;
+}
+.banner-slide{
+	background: url(../images/intro-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    width: 100%;
+    padding: 18% 0 12% 0;
+    position: relative;
+}
+a.nav-link{
+	color: #000;
+}
+.navbar-brand i{
+	color: #0BA2DB;
+}
+
+nav a:hover{
+	color: #000;
+}
+.navbar-brand{
+	color: #000;
+	font-weight: 600;
+	text-shadow: 1px 1px #fff;
+	font-size: 24px;
+	margin: 18px 0 0 12%;
+}
+.navbar-nav{
+	margin-right: 12%;
+	margin-top: 18px;
+}
+.navbar-nav li.nav-item{
+	padding: 0 10px 0 10px;
+}
+.navbar-default.scrolled{
+  background:#e7e7e7;
+  margin-top: -15px;
+  border-bottom: 1px solid #444;
+}
+.navbar-nav li a:hover, a.nav-link.active{
+	color: #0BA2DB;
+}
+.navbar-toggler-icon{
+	width: 2px;
+	height: 22px;
+	background-color: #fff;
+}
+.navbar-toggler{
+	background-color: #202020;
+	transform: rotate(90deg);
+	padding: 10px;
+}
+.banner-heading{
+	text-align: center;
+	text-transform: uppercase;
+	color: #0BA2DB;
+	font-weight: 600;
+	font-size: 74px;
+	margin-bottom: 10px;
+}
+.banner-desc{
+	color: #444;
+	font-size: 28px;
+	margin-top: 10px;
+	margin-bottom: 40px;
+}
+.get-started{
+	text-transform: uppercase;
+    padding: 14px 20px;
+    background-color: #0BA2DB;
+    border-color: #0BA2DB;
+    border: none;
+    margin-top: 4%;
+    color: #fff;
+}
+.about, .pricing{
+	padding-bottom: 8%;
+}
+.about img{
+	display: inline-block;
+	border: 1px solid #0BA2DB;
+	border-radius: 20px;
+	padding: 20px;
+}
+.about .heading h3, .services h3, .pricing h3, .contact h3{
+	font-size: 42px;
+	color: #616161;
+	text-align: center;
+    padding: 120px 0 4px 0;
+}
+hr{
+	width: 6%;
+    border-top: 3px solid #0BA2DB;
+    padding-bottom: 5%;
+}
+.about .about-content{
+	margin-top: 20px;
+	margin-left: 10px;
+    padding-right: 20%;
+}
+.about .about-content h4{
+	color: #444;
+	font-size: 22px;	
+}
+.about .about-content p{
+	color: #888;
+	margin-top: 20px;
+	line-height: 1.5;
+	letter-spacing: 0.2px;
+}
+.about .about-content ul{
+	color: #888;
+	margin-top: 20px;
+	line-height: 2;
+	list-style: none;
+	letter-spacing: 0.3px;
+}
+.about .about-content li:before {
+    content: "✓";
+    color: #0ba2db;
+    padding-right: 10px;
+}
+.services, .contact{
+	background-color: #F6F6F6;
+	padding-bottom: 8%;
+}
+.services .service-text, .pricing .pricing-text, .contact .contact-text{
+	text-align: center;
+    margin-top: -60px;
+    color: #888;
+    padding-bottom: 5%;
+    font-size: 18px;
+}
+.services .row{
+	padding: 0 10% 0 15%;
+}
+.services .fas{
+	font-size: 48px;
+    margin: 20px 0;
+    color: #0ba2db;
+}
+.services .service-content{
+	text-align: center;
+    padding-right: 20px;
+}
+.services .service-content h4{
+	font-size: 22px;
+    color: #444;
+    font-weight: 300;
+    padding-top: 15px;
+}
+.services .service-content p{
+	color: #888;
+}
+.contact form{
+	padding: 0 25% 0 25%;
+}
+.contact form .form-control{
+	border-radius: 0;
+}
+.contact form .btn{
+	margin-left: 35%;
+    margin-top: 5%;
+    border-radius: 0;
+    width: 22%;
+    padding: 10px;
+    background-color: #0BA2DB;
+}
+.contact form .btn:hover{
+	background-color: #444444;
+	color: #fff;
+}
+.contact .social{
+	list-style: none;
+	margin: 0;
+	padding:0;
+	padding-left: 37%;
+    padding-top: 5%;
+}
+.social li{
+  display: inline-block;
+  padding: 0 20px 0 20px;
+  font-size: 30px;
+}
+.social li i{
+  padding: 15px 10px 10px 0;
+  color: #0BA2DB;
+  border: 2px solid transparent;
+}
+.social li i:hover{
+	color: #444;
+}
+footer{
+	background-color: #E6E6E6;
+	margin-left: -15px;
+	margin-right: -15px;
+}
+footer p{
+	padding: 2% 0 2% 0;
+	color: #888;
+	text-align: center !important;
+	margin-bottom: 0;
+}
+.pricing .card-deck{
+	margin: auto;
+	width: 75%;
+}
+.pricing .card-header{
+	padding: 10%;
+    font-size: 32px;
+    box-shadow: 9px 0px 30px 7px rgba(0, 0, 0, 0.05) inset;
+    background-color: #fff};
+
+.pricing .card-body p:first-child{
+	border: none;
+	padding-top: 30px;
+    font-size: 36px;
+}
+.pricing .card-body p{
+	border-top: 1px solid #eee;
+	padding-top: 15px;
+}
+.pricing .card-body{
+	padding: 0;
+}
+.pricing .card-footer{
+	background-color: #fff;
+    padding: 30px;
+}
+.pricing .card-footer button{
+	background-color: #0BA2DB;
+    border: none;
+    padding: 10px;
+    width: 55%;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 3px;
+}
+.pricing .card-footer button:hover{
+	background: #444444;
+	color: #fff;
+}
+.card-deck .highlight-card{
+	margin-top: -20px;
+    margin-bottom: -17px;
+}
+.pricing .highlight-card .card-footer{
+	background-color: #0BA2DB;
+}
+.pricing .highlight-card .card-footer button{
+	border: 1px solid #fff;
+}
+.pricing .highlight-card .card-footer button:hover{
+	background: #444444;
+	color: #fff;
+}
+.pricing .highlight-card .card-header{
+	background-color: #0BA2DB;
+    color: #fff;
+}
+.pricing .card:hover{
+	box-shadow: 0px 9px 20px 13px rgb(0,0,0,0.05);
+}
+@media only screen and (max-width: 1300px){
+	.about .about-content ul{
+		margin-top: 0;
+		font-size: 13px;
+	}
+	.pricing .card-footer button{
+		width: 75%;
+	}
+	.contact form .btn{
+		width: 30%;
+	}
+}
+@media only screen and (max-width: 1160px){
+	.about .about-content h4{
+		font-size: 20px;
+	}
+	.about .about-content p{
+		font-size: 14px;
+		margin-top: 10px;
+	}
+	.about .about-content{
+		margin-top: 0;
+	}
+	.pricing .card-deck{
+		width: 85%;
+	}
+}
+@media only screen and (max-width: 992px){
+	.about .about-content ul{
+		line-height: 1.4;
+	}
+	.about .about-content p{
+		font-size: 13px;
+	}
+	.pricing .card-deck{
+		width: 100%;
+	}
+	hr{
+		padding-bottom: 6%;
+	}
+	.services .service-content h4{
+		font-size: 20px;
+		padding-bottom: 10px;
+	}
+	.services .service-content p{
+		font-size: 15px;
+	}
+	.contact form .btn{
+		width: 35%;
+	}
+	.contact .social{
+		padding-left: 28%;
+	}
+}
+@media only screen and (max-width: 820px){
+	.pricing .card-header{
+		font-size: 30px;
+	}
+	.pricing .card-footer button {
+	    width: 100%;
+	}
+}
+@media only screen and (max-width: 767px){
+	.about .pl-10{
+		padding-left: 10%;
+	}
+	hr {
+	    padding-bottom: 10%;
+	}
+	.pricing .card-header {
+	    font-size: 21px;
+	}
+	.contact form .btn {
+	    margin-left: 25%;
+	    width: 50%;
+	}
+	#navbarCollapse{
+		background: #788b96;
+		text-align: center;
+	}
+	a.nav-link {
+	    color: #fff;
+	    padding: 12px;
+	    border-bottom: 1px solid #fff;
+	    width: 50%;
+	    margin-left: 30%;
+	    font-weight: 600;
+	}
+	.navbar-nav li a:last-child{
+		margin-bottom: 10px;
+	}
+	.contact form{
+		padding: 0;
+	}
+	.contact .social{
+		padding-left: 20%;
+	}
+}
+@media only screen and (max-width: 576px){
+	.card-deck .card{
+		margin-top: 30px;
+	}
+	.card-deck .highlight-card{
+		margin-top: 0;
+	}
+	.contact form{
+		padding: 0;
+	}
+	.contact .social{
+		padding-left: 18%;
+	}
+}
+@media only screen and (max-width: 540px){
+	.contact form .btn {
+	    margin-left: 17%;
+	    width: 65%;
+	}
+	.contact .social {
+	    padding-left: 12%;
+	}
+}
+@media only screen and (max-width: 480px){
+	.banner-heading {
+	    font-size: 55px;
+	    padding-top: 45px;
+	}
+	.banner-desc {
+	    font-size: 18px;
+	}
+	hr {
+	    padding-bottom: 15%;
+	}
+}

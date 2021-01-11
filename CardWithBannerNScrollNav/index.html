@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Catalyst</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+	<script>
+		$(window).scroll(function(){
+			$('nav').toggleClass('scrolled', $(this).scrollTop() > 50);
+		});
+	</script>
+	<div class="container-fluid p-0">
+		<nav class="navbar navbar-default navbar-expand-md fixed-top">
+			<a class="navbar-brand" href="#home"><i class="far fa-bookmark"></i> Catalyst</a>
+			<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+				<span class="navbar-toggler-icon"></span>
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+				<ul class="navbar-nav">
+					<li class="nav-item active">
+						<a class="nav-link" href="#about">ABOUT</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#services">SERVICES</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#pricing">PRICING</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#contact">CONTACT</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<!-- <div class="banner row" id="home">
+			<div class="col-md-12 col-sm-12 p-0">
+				<div class="banner-img"></div>
+				<div class="center">
+					<h1>catalyst</h1>
+					<p>Lorem ipsum dolor sit amet consectetur adipiscing</p>
+					<a href="#"><button class="get-started">get started</button></a>
+				</div>
+			</div>
+		</div> -->
+		<div class="banner-slide">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<h1 class="banner-heading">catalyst</h1>
+						<p class="banner-desc">Lorem ipsum dolor sit amet consectetur adipiscing</p>
+						<a href="#"><button class="get-started">get started</button></a>		
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div id="about" class="about row m-0">
+			<div class="col-md-12 col-sm-12 heading">
+				<h3>About Us</h3>
+				<hr>
+				<div class="row">
+					<div class="col-md-6 col-sm-12" style="padding-left: 10%;">
+						<img src="./images/about.jpg" class="img-fluid thumbnail">
+					</div>
+					<div class="col-md-6 col-sm-12 mt-sm-4 pl-10">
+						<div class="about-content">
+							<h4>Lorem ipsum dolor sitamet consectetur</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor.</p>
+							<div class="row">
+								<div class="col-md-6 col-sm-6 p-0">
+									<ul>
+										<li>Lorem ipsum dolor</li>
+										<li>Consectetur adipiscing</li>
+										<li>Duis sed dapibus leo</li>
+										<li>Sed commodo nibh ante</li>
+									</ul>
+								</div>
+								<div class="col-md-6 col-sm-6 p-0">
+									<ul>
+										<li>Lorem ipsum dolor</li>
+										<li>Consectetur adipiscing</li>
+										<li>Duis sed dapibus leo</li>
+										<li>Sed commodo nibh ante</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="services" class="services row m-0">
+			<div class="col-md-12">
+				<h3>Our Services</h3>
+				<hr>
+				<p class="service-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed dapibus leonec.</p>
+				<div class="row">
+					<div class="col-md-3 service-content">
+						<i class="fas fa-home"></i>
+						<h4>LOREM IPSUM</h4>
+						<p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam.</p>
+					</div>
+					<div class="col-md-3 service-content">
+						<i class="fas fa-umbrella"></i>
+						<h4>DOLOR SIT AMET</h4>
+						<p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam.</p>
+					</div>
+					<div class="col-md-3 service-content">
+						<i class="fas fa-cogs"></i>
+						<h4>TEMPUS ELEIFEND</h4>
+						<p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam.</p>
+					</div>
+					<div class="col-md-3 service-content">
+						<i class="fas fa-language"></i>
+						<h4>PELLENTESQUE</h4>
+						<p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="pricing" class="pricing row m-0">
+			<div class="col-md-12 col-sm-12">
+				<h3>Pricing</h3>
+				<hr>
+				<p class="pricing-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed dapibus leonec.</p>
+				<div class="card-deck">
+					<div class="card text-center">
+						<div class="card-header">Basic</div>
+					    <div class="card-body">
+					    	<p>$10</p>
+					    	<p>1 GB Disk Space</p>
+					    	<p>1GB Monthly Bandwidth</p>
+					    	<p>3 Domains</p>
+					    	<p>3 Email Accounts</p>
+					    	<p>Free Setup</p>
+					    </div> 
+					    <div class="card-footer">
+					    	<button>Order Now</button>
+					    </div>
+					</div>
+					<div class="card highlight-card text-center">
+						<div class="card-header">Standard</div>
+					    <div class="card-body">
+					    	<p>$20</p>
+					    	<p>10 GB Disk Space</p>
+					    	<p>10GB Monthly Bandwidth</p>
+					    	<p>10 Domains</p>
+					    	<p>10 Email Accounts</p>
+					    	<p>Free Setup</p>
+					    </div> 
+					    <div class="card-footer">
+					    	<button>Order Now</button>
+					    </div>
+					</div>
+					<div class="card text-center">
+						<div class="card-header">Professional</div>
+					    <div class="card-body">
+					    	<p>$30</p>
+					    	<p>20 GB Disk Space</p>
+					    	<p>20GB Monthly Bandwidth</p>
+					    	<p>20 Domains</p>
+					    	<p>20 Email Accounts</p>
+					    	<p>Free Setup</p>
+					    </div> 
+					    <div class="card-footer">
+					    	<button>Order Now</button>
+					    </div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="contact" class="contact row m-0">
+			<div class="col-md-12">
+				<h3>Contact Us</h3>
+				<hr>
+				<p class="contact-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed dapibus leonec.</p>
+				<form action="#">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+								<input type="name" class="form-control" id="name" placeholder="Name" name="name" required="">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<input type="email" class="form-control" id="email" placeholder="Email" name="email" required="">
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<div class="form-group">
+								<textarea class="form-control" placeholder="Message"></textarea>
+							</div>
+						</div>
+					</div>
+					<button type="submit" class="btn btn-primary">Send Message</button>
+				</form>
+			<ul class="social">
+					<li>
+						<a href="#"><i class="fab fa-facebook-f"></i></a>
+					</li>
+					<li>
+						<a href="#"><i class="fab fa-twitter"></i></a>
+					</li>
+					<li>
+						<a href="#"><i class="fab fa-google-plus-g"></i></a>
+					</li>
+					<li>
+						<a href="#"><i class="fab fa-youtube"></i></i></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<footer class="row m-0">
+			<p class="text-center">Copyright © 2016 Catalyst. Designed by TemplateWire</p>
+		</footer>
+	</div>
+</body>
+</html>

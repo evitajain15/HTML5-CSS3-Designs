@@ -1,0 +1,559 @@
+html {
+  scroll-behavior: smooth;
+  transition: 0.3s ease;
+}
+button:hover{
+	cursor: pointer;
+}
+.navbar-brand{
+	margin-left: 12%;
+}
+.navbar-collapse{
+	margin-right: 12%;
+}
+.navbar-nav li a{
+	color: #3ac1bc;
+}
+.navbar-nav .dropdown .dropdown-menu a{
+	color: #999999;
+}
+.navbar-nav .dropdown .dropdown-menu a:hover{
+	color: #333;
+}
+.dropdown:hover>.dropdown-menu {
+  display: block;
+}
+.banner{
+	background-color: #36ADBD;
+	width: 100%;
+	height: 100%;
+	min-height: 120vh;
+	padding-top: 16%;
+}
+/* .banner-text{
+	margin-left: -8%;
+} */
+.banner-text h1{
+	font-size: 64px;
+    color: #fff;
+    font-weight: lighter;
+    margin-top: 22px;
+    letter-spacing: 2.4px;
+    margin-bottom: 30px;
+}
+.banner-text p{
+	color: #d3f1ed;
+	font-size: 20px;
+	margin-bottom: 40px;
+	letter-spacing: 1.5px;
+}
+.banner-text a button{
+	color: #36ADBD;
+    border: none;
+    background-color: #fff;
+    padding: 15px;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+}
+.client{
+	background-color: #F6F6F6;
+}
+.client img{
+	padding: 15% 0 15% 0;
+}
+.client .client2, .client .client3, .client .client5{
+	margin-left: -2%;
+}
+.client .client4{
+	margin-left: -7%;
+}
+.services, .portfolio, .team, .contact-page, .contact-page{
+	padding: 8% 0 8%;
+}
+.services .heading h1, .portfolio .heading h1, .testimonial .heading h1, .team .heading h1, .contact-page .heading h1{
+	font-size: 45px;
+    margin-bottom: 10px;
+    line-height: 1.5;
+    color: #4d4d4d;
+    font-weight: 400;
+}
+.services .heading p, .portfolio .heading p, .testimonial .heading p, .team .heading p, .contact-page .heading p{
+	font-size: 18px;
+    line-height: 1.7;
+    color: #898989;
+    padding-left: 15%;
+    padding-right: 10%;
+}
+.services .heading button{
+	background: #00ffa3;
+    color: #239c71;
+    border: 2px solid #00ffa3;
+    text-transform: uppercase;
+    padding: 15px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+}
+.services .services-content,.portfolio .portfolio-content{
+	padding: 8% 0;
+}
+.services .card-deck .card {
+    border: none;
+    box-shadow: 0px 22px 68px -9px rgba(0, 0, 0, 0.15);
+    transition: 0.5s;
+}
+.services .card-deck .animation-down-mt{
+	top: 40%;
+}
+.services .card .card-body h3 i{
+	color: #17B794;
+	padding-right: 15px;
+}
+.services .card .card-body{
+	padding:43px;
+}
+.services .card .card-body h3{
+	font-size: 25px;
+    font-weight: 400;
+}
+.services .card .card-body p{
+	color: #888;
+	text-align: left;
+	margin-top: 15px;
+}
+.portfolio .port-img{
+	position: relative;
+}
+.portfolio .portfolio-content img{
+	width: 100%;
+	height: 240px;
+	display: block;
+	margin-bottom: 30px;
+}
+.portfolio .portfolio-content .middle-img{
+	height: 511px;
+}
+.portfolio .portfolio-content .overlay-middle-img{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 511px;
+	width: 100%;
+	opacity: 0;
+	transition: .5s ease;
+	background: linear-gradient(to right, #3dcdbc 0%, #33a1bd 100%);
+	overflow: hidden;
+}
+.portfolio .portfolio-content .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 240px;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background: linear-gradient(to right, #3dcdbc 0%, #33a1bd 100%);
+  overflow: hidden;
+}
+.portfolio .port-img:hover .overlay, .portfolio .port-img:hover .overlay-middle-img {
+  opacity: 1;
+}
+.portfolio .portfolio-content .overlay i, .portfolio .portfolio-content .overlay-middle-img i{
+    float: right;
+    font-size: 22px;
+    color: #fff;
+    transform: rotate(45deg);
+    margin-top: 4px;
+    margin-right: 4px;
+}
+.portfolio .portfolio-content .overlay .copy, .portfolio .portfolio-content .overlay-middle-img .copy{
+    position: absolute;
+	bottom: 0;
+	left: 4%;
+    color: #fff;
+}
+.portfolio .portfolio-content .overlay .copy h3, .portfolio .portfolio-content .overlay-middle-img .copy h3{
+	font-size: 22px;
+}
+.portfolio .portfolio-content .overlay .copy p, .portfolio .portfolio-content .overlay-middle-img .copy p{
+	font-size: 15px;
+}
+.testimonial{
+	background-color: #F6F6F6;
+	padding: 8% 0 10% 0;
+}
+.testimonial .testimonial-content{
+	padding: 4% 0% 0 8%;
+}
+.testimonial .testimonial-content img{
+	float: left;
+	width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.testimonial .testimonial-content .text{
+	margin: 2% 19% 0;
+    font-style: italic;
+}
+.testimonial .testimonial-content .text p {
+    font-size: 17px;
+    color: #888;
+}
+.testimonial .testimonial-content .test-ml{
+	margin-left: -7%;
+}
+.testimonial .testimonial-content .text h4{
+	color: #666666;
+    margin-top: 15px;
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 35px;
+}
+.contact{
+	background-color: #262626;
+	padding-bottom: 7%;
+}
+.contact .heading h3{
+	color: #fff;
+	padding: 10% 0 4% 0;
+	font-size: 35px;
+}
+.contact .heading a button{
+	text-transform: uppercase;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 15px;
+    background-color: transparent;
+    font-size: 20px;
+    letter-spacing: 2px;
+    transition: 0.3s ease;
+}
+.contact .contact-content{
+	padding: 6% 0 0 0;
+}
+.contact-content .contact-no, .contact-content .contact-form{
+	margin-left: -2%;
+}
+.contact-content .contact-desc h3{
+	color: #fff;
+	font-weight: 400;
+}
+.contact-content .contact-desc p{
+	color: #777;
+	letter-spacing: 0.6px;
+}
+.contact-content .contact-menu ul{
+	list-style: none;
+}
+.contact-content .contact-menu ul a li, .contact-content .contact-no a{
+	color: #17B794;
+	font-size: 15px;
+	line-height: 2;
+	letter-spacing: 0.6px;
+}
+.contact-content .contact-menu ul a li:hover, .contact-content .contact-no a:hover{
+	color: #fff;
+	text-decoration: none;
+}
+.contact-content .contact-menu ul a:hover{
+	text-decoration: none;
+}
+.contact-content .contact-form .form-control{
+	border-radius: 5px;
+    padding: 8%;
+}
+.contact-content .contact-form .input-group-append{
+	margin-left: 5px;
+}
+.contact-content .contact-form .input-group-append span{
+	border-radius: 5px;
+    background-color: #1ACEA6;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 17px;
+    cursor: pointer;
+}
+footer{
+	background-color: #1A1A1A;
+	color: #777;
+	padding: 2% 0 1%;
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #555;
+  color: white;
+  cursor: pointer;
+  padding: 13px 18px;
+  border-radius: 4px;
+}
+.portfolio button{
+	background: #00ffa3;
+    color: #239c71;
+    border: 2px solid #00ffa3;
+    text-transform: uppercase;
+    padding: 15px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+}
+.contact .heading a button:hover{
+	color: #000;
+	background-color: #fff;
+}
+.about-banner, .service-banner, .portfolio-banner, .contact-banner{
+	background: linear-gradient(to right, #3dcdbc 0%, #33a1bd 100%);
+	/*margin-bottom: -16px;*/
+	padding: 14%;
+	letter-spacing: 1px;
+}
+.about-banner h3, .service-banner h3, .portfolio-banner h3, .contact-banner h3{
+	font-size: 55px;
+    color: #fff;
+    font-weight: lighter;
+}
+.about-banner p, .service-banner p, .portfolio-banner p, .contact-banner p{
+	color: #d3f1ed;
+    font-size: 20px;
+    padding-right: 28%;
+}
+.contact-page .contact-page-content{
+	padding: 4% 0 0 0;
+}
+.contact-page .contact-page-content form label{
+	font-size: 20px;
+    color: #777777;
+}
+.contact-page .contact-page-content form .form-control{
+	padding: 25px;
+}
+.contact-page .contact-page-content form button{
+    background-color: #00FFA3;
+    border: none;
+    border-radius: 0;
+    padding: 15px;
+    text-transform: uppercase;
+    color: #239c71;
+}
+.contact-page .contact-page-content .contact-addr-pl{
+	padding-left: 8%;
+}
+.contact-page .contact-page-content .contact-addr-pl h3{
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.contact-page .contact-page-content .contact-addr-pl p{
+	color: #888;
+	letter-spacing: 0.6px;
+	line-height: 1.5;
+	margin-bottom: 30px;
+}
+.contact-page .contact-page-content .contact-addr-pl h5{
+	font-size: 18px;
+    color: #777;
+    font-weight: 300;
+    margin-bottom: 25px;	
+}
+.contact-page .contact-page-content .contact-addr-pl h5 i{
+	color: #999;
+    padding-right: 20px;
+}
+.contact-page .contact-page-content .contact-addr-pl h5 a{
+	color: #17B794;
+}
+.navbar-toggler-icon{
+	width: 2px;
+	height: 22px;
+	background-color: #fff;
+}
+.navbar-toggler{
+	background-color: #202020;
+	transform: rotate(90deg);
+	padding: 10px;
+}
+.team-carousel{
+	padding: 0 16% 0 16%;
+}
+.team-carousel .owl-carousel .item h2{
+	font-weight: 400;
+    margin: 10px 0 5px;
+    font-size: 26px;
+}
+.team-carousel .owl-carousel .item .role{
+	color: #888;
+    margin: 10px 0;
+}
+.team-carousel .owl-carousel .item p{
+	color: #888;
+}
+.social{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.social li{
+	display: inline-block;
+}
+.social li a{
+	padding-right: 15px;
+	font-size: 22px;
+	color: #17b794;
+}
+.social li a:hover{
+	color: #000;
+}
+.modal{
+	top: 60px;
+}
+.modal-content{
+	border-radius: 0;
+	background-color: #000;
+}
+.close{
+    opacity: 0.5;
+    color: #fff;
+    position: absolute;
+    top: -25px;
+    left: auto;
+    right: 0;
+    border: 0;
+    font-size: 24px;
+}
+.close:hover{
+	opacity: 1;
+	color: #fff;
+}
+@media only screen and (max-width: 1400px){
+	.banner-text {
+	    margin-left: -4%;
+	}
+	.banner-text a button{
+		width: 50%;
+	}
+	.services .heading button{
+		width: 30%;
+	}
+	.portfolio button{
+		width: 35%;
+	}
+	.testimonial .testimonial-content .text p{
+		margin-left: 24px;
+	}
+	.contact .heading a button{
+		width: 25%;
+	}
+}
+@media only screen and (max-width: 1200px){
+	.banner-text {
+	    margin-left: 0;
+	}
+	.banner-text a button {
+	    width: 60%;
+	}
+	.services .heading button {
+	    width: 35%;
+	}
+	.services .card .card-body h3{
+		font-size: 18px;
+	}
+	.portfolio button {
+	    width: 40%;
+	}
+	.testimonial .testimonial-content .text p {
+		margin-left: 40px;
+	}
+	.testimonial .testimonial-content .text h4{
+		margin-left: 35px;
+	}
+	.contact .heading a button {
+	    width: 30%;
+	}
+	.contact-content .contact-no, .contact-content .contact-form {
+	    margin-left: -3%;
+	}
+	.contact-page .contact-page-content form button{
+		width: 50%;
+	}
+}
+@media only screen and (max-width: 992px){
+	.navbar-collapse {
+	    margin-right: 0%;
+	}
+	.banner-text a button {
+	    width: 75%;
+	}
+	.client .client4 {
+	    margin-left: -3%;
+	}
+	.services .heading button {
+	    width: 45%;
+	}
+	.services .card .card-body h3 i {
+	    padding-right: 35px;
+	}
+	.services .card .card-body h3{
+		font-size: 14px;
+	}
+	.services .card .card-body p{
+		font-size: 13px;
+	}
+	.portfolio button {
+	    width: 55%;
+	}
+	.testimonial .testimonial-content .text p{
+		font-size: 14px;
+		margin-left: 58px;
+	}
+	.contact .heading a button {
+		width: 40%;
+	}
+	.contact .contact-content{
+		padding-left: 5%
+	}
+	.contact-content .contact-no, .contact-content .contact-form {
+		margin-left: 0;
+	}
+	.contact-page .contact-page-content form button{
+		width: 65%;
+	}
+	.services .card-deck .animation-down-mt{
+		margin-top: 0;
+	}
+}
+@media only screen and (max-width: 767px){
+	.testimonial .testimonial-content .test-ml {
+	    margin-left: 0;
+	}
+	.contact-content .contact-form .form-control {
+	    padding: 4%;
+	    margin-top: 30px;
+	}
+	.contact-content .contact-form .input-group-append span{
+		height: 53px;
+		margin-top: 30px;
+	}
+	.contact-content .contact-menu{
+		margin-left: -5%;
+	}
+	.contact-page .contact-page-content form button{
+		margin-bottom: 30px;
+	}
+}
+@media only screen and (max-width: 576px){
+	.client img {
+		padding: 3% 32%;
+	}
+}

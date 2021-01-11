@@ -1,0 +1,604 @@
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css");
+html {
+  scroll-behavior: smooth;
+}
+body{
+	font-family:Poppins, sans-serif
+}
+.fixed-top{
+	top: 15px;
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 40px;
+  right: 50px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #222;
+  color: white;
+  cursor: pointer;
+  padding: 15px 22px;
+  border-radius: 0;
+}
+#myBtn:hover{
+	background: #f2545f;
+	color: #fff;
+}
+.navbar-default.scrolled{
+  background:#000;
+  margin-top: -15px;
+}
+.navbar-brand{
+    color: #fff;
+    font-size: 30px;
+    margin-left: 14%;
+    font-weight: 600;
+}
+.navbar-brand:hover{
+	color: #fff;
+}
+.navbar-nav{
+	padding-right: 10%;
+}
+.navbar-nav li{
+	padding-right: 15px;
+}
+.navbar-nav li a{
+	color: #ddd;
+	font-size: 12px;
+	font-weight: 600;
+}
+.navbar-nav li a:hover, .navbar-nav li a.active{
+	color: #66ccff;
+}
+.navbar-toggler-icon{
+	width: 22px;
+    height: 2px;
+    background-color: rgba(255,255,255,1);
+    margin: 4px 3px;
+    display: block;
+}
+.navbar-toggler{
+	background-color: #202020;
+	border-radius: 0;
+	padding: 10px;
+}
+.banner{
+	background: url('../images/intro-bg.jpg')repeat-y fixed;
+    background-size: cover;
+    background-position: 50% 50%;
+    width: 100%;
+    height: 100vh;
+}
+.banner .banner-text{
+    padding: 25% 0 0 0;
+    color: #fff;
+}
+.banner h3{
+	letter-spacing: 3px;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 600;
+}
+.banner h1{
+	font-size: 55px;
+	letter-spacing: 4px;
+    padding: 1% 0 2% 0;
+}
+.banner .learnBtn{
+	padding: 10px 15px;
+    text-transform: uppercase;
+    background: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    margin-right: 15px;
+}
+.banner .learnBtn:hover{
+	background: #fff;
+	color: #000;
+}
+.banner .registerBtn{
+	padding: 10px 15px;
+    text-transform: uppercase;
+    background: #f2545f;
+    color: #fff;
+    border: 2px solid #f2545f;
+}
+.banner .registerBtn:hover{
+	border: 2px solid #fff;
+	background: transparent;
+}
+.overview{
+	padding: 10% 0 10% 0;
+}
+.overview h3{
+	padding: 15px 0 15px 0;
+    line-height: 38px;
+}
+.overview p{
+	color: #777;
+	font-size: 14px;
+	line-height: 25px;
+}
+.detail{
+    background-color: #222222;
+    color: #fff;
+    text-align: center;
+    padding: 7% 0 5% 0;
+}
+.detail i{
+	color: #F1545F;
+	padding-bottom: 15px;
+	font-size: 42px;
+}
+.detail h2{
+	padding-bottom: 15px;
+}
+.detail p{
+	color: #707070;
+	font-size: 14px;
+}
+.video, .speakers, .programs, .faq, .sponsors{
+	padding: 8% 0 7% 0;
+}
+.video .video-content h2{
+	padding: 25px 0 5px 0;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.video .video-content h3{
+	padding-bottom: 12px;
+    letter-spacing: 1px;
+    font-size: 25px;
+    line-height: 36px;
+}
+.video .video-content p{
+	color: #707070;
+    font-size: 14px;
+    line-height: 24px;
+}
+.video embed{
+	width: 100%; 
+	height: 100%
+}
+.speakers{
+	background-color: #F9F9F9;
+}
+.speakers .heading, .faq .heading, .sponsors .heading{
+	text-align: center;
+}
+.speakers .heading h2, .faq .heading h2, .sponsors .heading h2{
+	color: #333333;
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+}
+.speakers .heading p, .faq .heading p, .sponsors .heading p{
+	color: rgb(112, 112, 112);
+    font-size: 14px;
+    line-height: 24px;
+    padding-bottom: 20px;
+    letter-spacing: 1px;
+}
+.speakers .item{
+    background: #ffffff;
+    padding-bottom: 22px;
+    width: 260px;
+}
+.speakers .speakers-content{
+	text-align: center;
+    padding: 20px 0 0;
+}
+.speakers .speakers-content h4{
+	font-size: 18px;
+    margin-bottom: 0px;
+}
+.speakers .speakers-content h6 {
+    color: #666;
+    margin-top: 4px;
+}	
+.speakers .owl-dots .owl-dot{
+	margin-top: 20px;
+}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: #242424 !important;
+}
+.programs .program-title h2{
+	font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.programs .program-title p{
+	color: #707070;
+    font-size: 14px;
+    line-height: 24px;
+}
+.programs .nav-tabs{
+	margin: 20px 0;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #f2545f;
+    background-color: #fff;
+    border-color: #fff #fff #999;
+    font-weight: 600;
+}
+.nav-tabs .nav-link{
+	color: #000;
+	font-weight: 600;
+}
+.nav-tabs .nav-link.active:hover{
+	border-color: #fff #fff #999;
+}
+.nav-tabs .nav-link:hover {
+    border-color: transparent;
+}
+.programs .tab-content .tab-img img{
+	border-radius: 50%;
+}
+.programs .tab-content h6{
+	font-size: 12px;
+	font-weight: 600;
+}
+.programs .tab-content span{
+	padding-right: 12px;
+}
+.programs .tab-content span i{
+	font-weight: 600;
+}
+.programs .tab-content h3{
+	margin-top: 16px;
+    font-size: 25px;
+    line-height: 34px;
+}
+.programs .tab-content h4{
+	color: #808080;
+    font-size: 12px;
+    font-weight: 600;
+}
+.programs .tab-content p{
+    color: #707070;
+    font-size: 14px;
+    line-height: 24px;
+}
+.programs .tab-content .program-divider{
+	border: 1px solid #f9f9f9;
+    margin-top: 32px;
+    margin-bottom: 42px;
+    padding: 0.5px;
+}
+.register{
+	background-size: cover;
+	background-position: 50% 50%;
+	background: url('../images/register-bg.jpg') 50% 0 repeat-y fixed;
+	color: #fff;
+	width: 100%;
+	height: auto;
+	min-height: 80vh;
+	padding: 10% 0 10% 0;
+}
+.register .register-content h2{
+    font-size: 30px;
+    padding: 25px 0 12px;
+    font-weight: 600;
+}
+.register .register-content h3{
+	font-size: 24px;
+    line-height: 36px;
+    padding-bottom: 15px;
+}
+.register .register-content p{
+    color: #707070;
+    font-size: 14px;
+    line-height: 24px;
+}
+.register .form-control{
+	background: transparent;
+    border-radius: 0;
+    border: 2px solid #fff;
+    padding: 20px 15px;
+}
+.register form button{
+	float: right;
+    color: #fff;
+    background: #f2545f;
+    width: 45%;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-radius: 100px;
+    height: 50px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+.register form button:hover{
+	background: #fff;
+	color: #000;
+}
+.faq{
+	background: #F9F9F9;
+}
+.faq #accordion .card-header{
+	background: #f0f0f0;
+}
+.faq #accordion .card-header:before{
+	float: right !important;
+    font-family: FontAwesome;
+    content:"\f068";
+    padding: 8px 5px 0 0;
+}
+.faq #accordion .card-header.collapsed:before {
+    float: right !important;
+    content:"\f067";
+}
+#accordion .card{
+	margin-bottom: 10px;
+}
+#accordion .card-header button{
+	font-size: 18px;
+    font-weight: 600;
+    color: #505050;
+}
+#accordion .card-body p{
+	color: #707070;
+    font-size: 14px;
+    line-height: 24px;
+}
+.venue{
+	background: url('../images/venue-bg.jpg') 50% 0 repeat-y fixed;
+	background-size: cover;
+	background-position: center center;
+	padding: 5rem 0 5rem 0;
+}
+.venue h2{
+	font-size: 30px;
+	font-weight: 600;
+}
+.venue p{
+	color: #707070;
+    font-size: 14px;
+    line-height: 24px;
+    padding: 12px 0 18px 0;
+}
+.venue h4{
+	font-size: 18px;
+	font-weight: 600;
+}
+.sponsors img{
+	margin-top: 18px;
+}
+.contact{
+	background: url('../images/contact-bg.jpg') 50% 0 repeat-y fixed;
+	background-size: cover;
+	background-position: 50% 50%;
+	padding: 10rem 0 10rem 0;
+}
+.contact .contact-desc h3{
+	padding-bottom: 12px;
+	line-height: 36px;	
+	color: #333333;
+}
+.contact .contact-desc p{
+	color: #707070;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 1px;
+}
+.contact .contact-form{
+	background: #fff;
+	padding: 13% 15% 28%;
+}
+.contact .contact-form .contact-heading h2{
+	font-size: 30px;
+	text-transform: uppercase;
+	font-weight: 600;
+	letter-spacing: 1px;
+}
+.contact .contact-form .contact-heading{
+	margin-bottom: 32px;
+}
+.contact .contact-form .form-control{
+	border: none;
+    border-bottom: 1px solid #f0f0f0;
+    border-radius: 0;
+    padding: 25px 7px 18px;
+}
+.contact .contact-desc button{
+	float: left;
+    color: #fff;
+    background: #f2545f;
+    width: 45%;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-radius: 100px;
+    height: 50px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    border: none;
+}
+.contact .contact-desc button:hover{
+	background: #232323;
+}
+.contact form button{
+	float: left;
+    color: #fff;
+    background: #232323;
+    width: 45%;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-radius: 100px;
+    height: 50px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    border: none;
+}
+.contact form button:hover{
+	background: #f2545f;
+	color: #fff;
+}
+footer {
+    padding: 140px 0px;
+}
+footer .footer-content{
+	text-align: center;
+}
+footer .footer-content p{
+	font-size: 14px;
+	line-height: 24px;
+    color: #707070;
+    letter-spacing: 1px;
+}
+footer .social{
+	list-style: none;
+	margin: 0;
+	padding:0;
+}
+footer .social li{
+  display: inline-block;
+  padding: 0 13px 0 13px;
+  font-size: 20px;
+}
+footer .social li i{
+  	border: 2px solid transparent;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding: 8px 8px 0 8px;
+    transition: 0.3s all;
+    color: #666;
+}
+footer .social li i:hover{
+	color: #fff;
+    background-color: #F25560;
+    transition: 0.3s all;
+}
+@media only screen and (max-width: 1200px){
+	.navbar-nav{
+		padding-right: 1%;
+	}
+	.navbar-nav li {
+	    padding-right: 10px;
+	}
+}
+@media only screen and (max-width: 992px){
+	.navbar-nav li {
+	    padding-right: 0;
+	}
+	.navbar-brand{
+		margin-left: 0;
+	}
+	.detail h2 {
+	    font-size: 25px;
+	}
+	.speakers .item{
+	    width: 170px;
+	}
+	.contact .contact-desc button{
+		width: 65%;
+	}
+	.contact .contact-form {
+	    padding: 13% 15% 35%;
+	}
+	.contact .contact-form .contact-heading h2{
+		font-size: 22px;
+	}
+	.banner .banner-text {
+	    padding: 40% 0 0 0;
+	}
+}
+@media only screen and (max-width: 767px){
+	.navbar-nav{
+		background: #101010;
+		margin: 0 -15px;
+		text-align: center;
+		font-weight: 600;
+		padding: 0 0 25px 35%;
+	}
+	li.nav-item {
+		border-bottom: 1px solid #66ccff;
+		width: 50%;
+		padding-top: 5px;
+	}
+	.banner h1{
+		font-size: 40px;
+	}
+	.banner .banner-text{
+		padding: 55% 0 0 0;
+	}
+	.speakers .item {
+	    width: 127px;
+	}
+	.contact .contact-desc button{
+		margin-bottom: 25px;
+		width: 45%;
+	}
+	#accordion .card-header button{
+		font-size: 16px;
+	}
+	.banner .learnBtn{
+		visibility: hidden;	
+	}
+	.banner .registerBtn{
+		margin-right: 30%;
+	}
+	.register form button{
+		float: left;
+	}
+}
+@media only screen and (max-width: 576px){
+	.programs .tab-content h6{
+		margin-top: 20px;
+	}
+	#accordion .card-header button {
+	    font-size: 14px;
+	}
+	.banner h1 {
+	    font-size: 35px;
+	}
+	.speakers .speakers-content h4{
+		font-size: 14px;
+	}
+	.speakers .speakers-content h6{
+		font-size: 13px;
+	}
+	.banner{
+		height: 120vh;
+	}
+}
+@media only screen and (max-width: 480px){
+	.programs .nav-tabs{
+		font-size: 15px;
+	}
+	#accordion .card-header button{
+		text-align: left;
+	}
+	.contact .contact-desc button{
+		width: 55%;
+	}
+	.banner .banner-text {
+	    padding: 75% 0 0 0;
+	}
+	.speakers .item{
+		width: 100px;
+	}
+	.banner .registerBtn{
+		margin-right: 26%;
+	}
+}
+@media only screen and (max-width: 430px){
+	.speakers .item{
+		width: 90px;
+	}
+	.speakers .speakers-content h4{
+		font-size: 10px;
+	}
+	.speakers .speakers-content h6{
+		font-size: 10px;
+	}
+}

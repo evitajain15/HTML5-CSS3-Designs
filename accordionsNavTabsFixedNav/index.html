@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>New Event - Responsive HTML Template</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+	<script>
+		new WOW().init();
+	</script>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+	<script>
+		$(window).scroll(function(){
+			$('nav').toggleClass('scrolled', $(this).scrollTop() > 50);
+		});
+	</script>
+
+	<div class="container-fluid p-0">
+		<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+		<nav class="navbar navbar-default navbar-expand-md fixed-top">
+			<a class="navbar-brand" href="#home">New Event</a>
+			<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+				<span class="navbar-toggler-icon"></span>
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+				<ul class="navbar-nav">
+					<li class="nav-item active">
+						<a class="nav-link" href="#intro">INTRO</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#overview">OVERVIEW</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#speakers">SPEAKERS</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#programs">PROGRAMS</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#register">REGISTER</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#venue">VENUE</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#sponsors">SPONSORS</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#contact">CONTACT</a>
+					</li>				
+				</ul>
+			</div>
+		</nav>
+
+		<div class="banner" id="intro">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center banner-text">
+						<h3 class="wow bounceIn  animated" data-wow-delay="0.9s">July 22 - 26 in San Francisco, CA</h3>
+						<h1 class="wow fadeInUp animated" data-wow-delay="1.6s">Web Design Conference</h1>
+						<a class="wow fadeInUp hidden-xs animated" data-wow-delay="2.3s"><button class="learnBtn">learn more</button></a>
+						<a class="wow fadeInUp animated" data-wow-delay="2.3s"><button class="registerBtn">register now</button></a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="overview" id="overview">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 wow fadeInUp animated" data-wow-delay="0.6s">
+						<h3>New Event is a fully responsive one-page template for events, conferences or workshops.</h3>
+						<p>This is a Bootstrap v3.3.6 layout that is responsive and mobile friendly. You may download and modify this template for your website. Please tell your friends about templatemo.</p>
+						<p>Quisque facilisis scelerisque venenatis. Nam vulputate ultricies luctus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
+					</div>
+					<div class="col-md-6 wow fadeInUp animated" data-wow-delay="0.9s">
+						<img src="images/overview-img.jpg" class="img-fluid">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="detail">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 wow fadeInLeft animated" data-wow-delay="0.3s">
+						<i class="fas fa-users"></i>
+						<h2>650 Participants</h2>
+						<p>Quisque ut libero sapien. Integer tellus nisl, efficitur sed dolor at, vehicula finibus massa. Sed tincidunt metus sed eleifend suscipit.</p>
+					</div>
+					<div class="col-md-4 wow fadeInUp animated" data-wow-delay="0.6s">
+						<i class="far fa-clock"></i>
+						<h2>24 Programs</h2>
+						<p>Quisque ut libero sapien. Integer tellus nisl, efficitur sed dolor at, vehicula finibus massa. Sed tincidunt metus sed eleifend suscipit.</p>
+					</div>
+					<div class="col-md-4 wow fadeInRight animated" data-wow-delay="0.9s">
+						<i class="fas fa-microphone"></i>
+						<h2>11 Speakers</h2>
+						<p>Quisque ut libero sapien. Integer tellus nisl, efficitur sed dolor at, vehicula finibus massa. Sed tincidunt metus sed eleifend suscipit.</p>
+					</div>					
+				</div>
+			</div>
+		</div>
+
+		<div class="video">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 video-content wow fadeInUp animated" data-wow-delay="1.3s">
+						<h2>WATCH VIDEO</h2>
+						<h3>Quisque ut libero sapien. Integer tellus nisl, efficitur sed dolor at, vehicula finibus massa. Sed tincidunt metus sed eleifend suscipit.</h3>
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet. Dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet consectetuer diam nonummy.</p>
+					</div>
+					<div class="col-md-6 wow fadeInUp animated" data-wow-delay="1.6s">
+						<embed src="https://www.youtube.com/embed/XDPwXQjAlB0">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="speakers" id="speakers">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 heading wow bounceIn animated" data-wow-delay="0.3s">
+						<h2>Creative Speakers</h2>
+						<p>Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet.</p>
+					</div>
+					<div class="owl-carousel owl-theme">
+					    <div class="item">
+					    	<img src="images/speakers-img1.jpg" class="img-fluid">
+					    	<div class="speakers-content">
+					    		<h4>Jenny Green</h4>
+					    		<h6>UI Designer</h6>
+					    	</div>
+					    </div>
+					    <div class="item">
+					    	<img src="images/speakers-img2.jpg" class="img-fluid">
+					    	<div class="speakers-content">
+					    		<h4>David Yoon</h4>
+					    		<h6>Creative Director</h6>
+					    	</div>
+					    </div>
+					    <div class="item">
+					    	<img src="images/speakers-img3.jpg" class="img-fluid">
+					    	<div class="speakers-content">
+					    		<h4>Je Mary Lee</h4>
+					    		<h6>Web Specialist</h6>
+					    	</div>
+					    </div>
+					    <div class="item">
+					    	<img src="images/speakers-img4.jpg" class="img-fluid">
+					    	<div class="speakers-content">
+					    		<h4>Johnathan Doe</h4>
+					    		<h6>Frontend Dev</h6>
+					    	</div>
+					    </div>
+					    <div class="item">
+					    	<img src="images/speakers-img5.jpg" class="img-fluid">
+					    	<div class="speakers-content">
+					    		<h4>Elite Hamilton</h4>
+					    		<h6>Marketing Guru</h6>
+					    	</div>
+					    </div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="programs" id="programs">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 program-title wow fadeInUp animated" data-wow-delay="0.6s">
+						<h2>OUR PROGRAMS</h2>
+						<p>Quisque ut libero sapien. Integer tellus nisl, efficitur sed dolor at, vehicula finibus massa. Sed tincidunt metus sed eleifend suscipit.</p>
+					</div>
+					<div class="row m-0">
+						<div class="col-md-10 col-sm-10 wow fadeInUp animated" data-wow-delay="0.9s">
+							<ul class="nav nav-tabs">
+								<li class="nav-item">
+									<a class="nav-link active" data-toggle="tab" href="#fday">First Day</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" data-toggle="tab" href="#sday">Second Day</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" data-toggle="tab" href="#tday">Third Day</a>
+								</li>
+							</ul>
+						
+							<div class="tab-content">
+								<div id="fday" class="container tab-pane active"><br>
+									<div class="row">
+										<div class="col-md-2 col-sm-3 tab-img">
+											<img src="images/program-img1.jpg" class="img-fluid">
+										</div>
+										<div class="col-md-10 col-sm-9">
+											<h6>
+												<span><i class="far fa-clock"></i> 9:00 AM</span>
+												<span><i class="fas fa-map-marker-alt"></i> Room 240</span>
+											</h6>
+											<h3>Introduction to Design</h3>
+											<h4>By Jenny Green</h4>
+											<p>Maecenas accumsan metus turpis, eu faucibus ligula interdum in. Mauris at tincidunt felis, vitae aliquam magna. Sed aliquam fringilla vestibulum.</p>
+										</div>
+										<div class="program-divider col-md-12"></div>
+									</div>
+									<div class="row">
+										<div class="col-md-2 col-sm-3 tab-img">
+											<img src="images/program-img2.jpg" class="img-fluid">
+										</div>
+										<div class="col-md-10 col-sm-9">
+											<h6>
+												<span><i class="far fa-clock"></i> 10:00 AM</span>
+												<span><i class="fas fa-map-marker-alt"></i> Room 360</span>
+											</h6>
+											<h3>Front-End Development</h3>
+											<h4>By Johnathan Mark</h4>
+											<p>Mauris at tincidunt felis, vitae aliquam magna. Sed aliquam fringilla vestibulum. Praesent ullamcorper mauris fermentum turpis scelerisque rutrum eget eget turpis.</p>
+										</div>
+										<div class="program-divider col-md-12"></div>
+									</div>
+									<div class="row">
+										<div class="col-md-2 tab-img col-sm-3">
+											<img src="images/program-img1.jpg" class="img-fluid">
+										</div>
+										<div class="col-md-10 col-sm-9">
+											<h6>
+												<span><i class="far fa-clock"></i> 11:00 AM</span>
+												<span><i class="fas fa-map-marker-alt"></i> Room 450</span>
+											</h6>
+											<h3>Social Media Marketing</h3>
+											<h4>By Johnathan Doe</h4>
+											<p>Nam pulvinar, elit vitae rhoncus pretium, massa urna bibendum ex, aliquam efficitur lorem odio vitae erat. Integer rutrum viverra magna, nec ultrices risus rutrum nec.</p>
+										</div>
+									</div>									
+								</div>
+								<div id="sday" class="container tab-pane fade"><br>
+									<div class="row">
+										<div class="col-md-2 tab-img col-sm-3">
+											<img src="images/program-img4.jpg" class="img-fluid">
+										</div>
+										<div class="col-md-10 col-sm-9">
+											<h6>
+												<span><i class="far fa-clock"></i> 11:00 AM</span>
+												<span><i class="fas fa-map-marker-alt"></i> Room 240</span>
+											</h6>
+											<h3>Backend Development</h3>
+											<h4>By Matt Lee</h4>
+											<p>Integer rutrum viverra magna, nec ultrices risus rutrum nec. Pellentesque interdum vel nisi nec tincidunt. Quisque facilisis scelerisque venenatis. Nam vulputate ultricies luctus.</p>
+										</div>
+										<div class="program-divider col-md-12"></div>
+									</div>
+									<div class="row">
+										<div class="col-md-2 col-sm-3 tab-img">
+											<img src="images/program-img5.jpg" class="img-fluid">
+										</div>
+										<div class="col-md-10 col-sm-9">
+											<h6>
+												<span><i class="far fa-clock"></i> 1:00 PM</span>
+												<span><i class="fas fa-map-marker-alt"></i> Room 450</span>
+											</h6>
+											<h3>Web Application Lite</h3>
+											<h4>By David Orlando</h4>
+											<p>Aliquam faucibus lobortis dolor, id pellentesque eros pretium in. Aenean in erat ut quam aliquet commodo. Vivamus aliquam pulvinar ipsum ut sollicitudin. Suspendisse quis sollicitudin mauris.</p>
+										</div>
+										<div class="program-divider col-md-12"></div>
+									</div>
+									<div class="row">
+										<div class="col-md-2 col-sm-3 tab-img">
+											<img src="images/program-img6.jpg" class="img-fluid">
+										</div>
+										<div class="col-md-10 col-sm-9">
+											<h6>
+												<span><i class="far fa-clock"></i> 3:00 PM</span>
+												<span><i class="fas fa-map-marker-alt"></i> Room 650</span>
+											</h6>
+											<h3>Professional UX Design</h3>
+											<h4>By James Lee Mark</h4>
+											<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet. Dolore magna aliquam erat volutpat.</p>
+										</div>
+									</div>									
+								</div>
+								<div id="tday" class="container tab-pane fade"><br>
+									<div class="row">
+										<div class="col-md-2 col-sm-3 tab-img">
+											<img src="images/program-img7.jpg" class="img-fluid">
+										</div>
+										<div class="col-md-10 col-sm-9">
+											<h6>
+												<span><i class="far fa-clock"></i> 3:00 PM</span>
+												<span><i class="fas fa-map-marker-alt"></i> Room 750</span>
+											</h6>
+											<h3>Online Shopping Business</h3>
+											<h4>By Michael Walker</h4>
+											<p>Aliquam faucibus lobortis dolor, id pellentesque eros pretium in. Aenean in erat ut quam aliquet commodo. Vivamus aliquam pulvinar ipsum ut sollicitudin. Suspendisse quis sollicitudin mauris.</p>
+										</div>
+										<div class="program-divider col-md-12"></div>
+									</div>
+									<div class="row">
+										<div class="col-md-2 col-sm-3 tab-img">
+											<img src="images/program-img8.jpg" class="img-fluid">
+										</div>
+										<div class="col-md-10 col-sm-9">
+											<h6>
+												<span><i class="far fa-clock"></i> 5:00 PM</span>
+												<span><i class="fas fa-map-marker-alt"></i> Room 850</span>
+											</h6>
+											<h3>Introduction to Mobile App</h3>
+											<h4>By Cherry Stella</h4>
+											<p>Nunc eu nibh vel augue mollis tincidunt id efficitur tortor. Sed pulvinar est sit amet tellus iaculis hendrerit. Mauris justo erat, rhoncus in arcu at, scelerisque tempor erat.</p>
+										</div>
+										<div class="program-divider col-md-12"></div>
+									</div>
+									<div class="row">
+										<div class="col-md-2 col-sm-3 tab-img">
+											<img src="images/program-img9.jpg" class="img-fluid">
+										</div>
+										<div class="col-md-10 col-sm-9">
+											<h6>
+												<span><i class="far fa-clock"></i> 7:00 PM</span>
+												<span><i class="fas fa-map-marker-alt"></i> Room 750</span>
+											</h6>
+											<h3>Bootstrap UI Design</h3>
+											<h4>By John David</h4>
+											<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet. Dolore magna aliquam erat volutpat.</p>
+										</div>
+									</div>									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="register" id="register">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-7 register-content wow fadeInUp animated" data-wow-delay="0.6s">
+						<h2>REGISTER HERE</h2>
+						<h3>Nunc eu nibh vel augue mollis tincidunt id efficitur tortor. Sed pulvinar est sit amet tellus iaculis hendrerit.</h3>
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet. Dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet consectetuer diam nonummy.</p>
+					</div>
+					<div class="col-md-5 wow fadeInUp animated" data-wow-delay="1s">
+						<form>
+							<div class="form-group">
+								<input type="text" class="form-control" id="fname" placeholder="First Name" name="fname" required="">
+							</div>
+							<div class="form-group">
+								<input type="text" class="form-control" id="lname" placeholder="Last Name" name="lname" required="">
+							</div>
+							<div class="form-group">
+								<input type="text" class="form-control" id="phone" placeholder="Phone Number" name="phone">
+							</div>
+							<div class="form-group">
+								<input type="email" class="form-control" id="email" placeholder="Email Address" name="email" required="">
+							</div>
+							<button type="submit" class="btn">Register</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="faq">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 heading wow bounceIn animated" data-wow-delay="0.3s">
+						<h2>DO YOU HAVE QUESTIONS?</h2>
+						<p>Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet.</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-10 offset-md-1 wow fadeInUp animated" data-wow-delay="0.9s">
+						<div id="accordion">
+							<div class="card">
+								<div class="card-header btn" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" id="headingOne">
+									<div class="row mb-0">
+										<button class="btn">What is Responsive Design?</button>
+									</div>
+								</div>
+
+								<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+									<div class="card-body">
+										<p>Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet, wisi risus purus augue vulputate voluptate neque, curabitur dolor libero sodales vitae elit massa. Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet.</p>
+										<p>Nunc eu nibh vel augue mollis tincidunt id efficitur tortor. Sed pulvinar est sit amet tellus iaculis hendrerit. Mauris justo erat, rhoncus in arcu at, scelerisque tempor erat.</p>
+									</div>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-header btn collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" id="headingTwo">
+									<div class="row mb-0">
+										<button class="btn">What are latest UX Developments?</button>
+									</div>
+								</div>
+								<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+									<div class="card-body">
+										<p>Nunc eu nibh vel augue mollis tincidunt id efficitur tortor. Sed pulvinar est sit amet tellus iaculis hendrerit. Mauris justo erat, rhoncus in arcu at, scelerisque tempor erat.
+										</p>
+										<p>Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet, wisi risus purus augue vulputate voluptate neque, curabitur dolor libero sodales vitae elit massa. Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet.</p>
+									</div>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-header btn collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" id="headingThree">
+									<div class="row mb-0">
+									<button class="btn collapsed">What things about Social Media will be discussed?</button>
+									</div>
+								</div>
+								<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+									<div class="card-body">
+										<p>Aenean vulputate finibus justo et feugiat. Ut turpis lacus, dapibus quis justo id, porttitor tempor justo. Quisque ut libero sapien. Integer tellus nisl, efficitur sed dolor at, vehicula finibus massa.</p>
+										<p>Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet, wisi risus purus augue vulputate voluptate neque, curabitur dolor libero sodales vitae elit massa. Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="venue" id="venue">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-5 offset-md-1 wow fadeInLeft animated" data-wow-delay="0.9s">
+						<h2>VENUE</h2>
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet. Dolore magna aliquam erat volutpat.</p>
+						<h4>New Event</h4>
+						<h4>120 Market Street, Suite 110</h4>
+						<h4>San Francisco, CA 10110</h4>
+						<h4>Tel: 010-020-0120</h4>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="sponsors" id="sponsors">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 heading wow bounceIn animated" data-wow-delay="0.3s">
+						<h2>OUR SPONSORS</h2>
+						<p>Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet.</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-3 wow fadeInUp animated" data-wow-delay="0.3s">
+						<img src="images/sponsor-img1.jpg" class="img-fluid">
+					</div>
+					<div class="col-md-3 wow fadeInUp animated" data-wow-delay="0.6s">
+						<img src="images/sponsor-img2.jpg" class="img-fluid">
+					</div>
+					<div class="col-md-3 wow fadeInUp animated" data-wow-delay="0.9s">
+						<img src="images/sponsor-img3.jpg" class="img-fluid">
+					</div>
+					<div class="col-md-3 wow fadeInUp animated" data-wow-delay="1s">
+						<img src="images/sponsor-img4.jpg" class="img-fluid">
+					</div>					
+				</div>
+			</div>
+		</div>
+
+		<div class="contact" id="contact">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-5 contact-desc offset-md-1 wow fadeInUp animated" data-wow-delay="0.6s">
+						<h3>New Event</h3>
+						<p>Proin sodales convallis urna eu condimentum. Morbi tincidunt augue eros, vitae pretium mi condimentum eget. Suspendisse eu turpis sed elit pretium congue.</p>
+						<p>Mauris at tincidunt felis, vitae aliquam magna. Sed aliquam fringilla vestibulum. Praesent ullamcorper mauris fermentum turpis scelerisque rutrum eget eget turpis.</p>
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet. Dolore magna aliquam erat volutpat. Lorem ipsum dolor.</p>
+						<button>Download Now</button>
+					</div>
+					<div class="col-md-5 wow fadeInUp animated" data-wow-delay="0.9s">
+						<div class="contact-form">
+							<div class="contact-heading">
+								<h2>Keep In Touch</h2>
+							</div>
+							<form>
+							<div class="form-group">
+								<input type="text" class="form-control" id="name" placeholder="Name" name="name" required="">
+							</div>
+							<div class="form-group">
+								<input type="email" class="form-control" id="email" placeholder="Email" name="email" required="">
+							</div>
+							<div class="form-group">
+								<textarea class="form-control" placeholder="Message"></textarea>
+							</div>
+							<button type="submit" class="btn">Send</button>
+						</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer>
+			<div class="container">	
+				<div class="row">
+					<div class="col-md-12 col-sm-12 footer-content">
+						<p class="wow fadeInUp animated" data-wow-delay="0.6s">Copyright © 2016 Your Company | Design: templatemo</p>
+						<ul class="social">
+							<li>
+								<a href="#"><i class="fab fa-facebook-f wow fadeInUp animated" data-wow-delay="0.6s"></i></a>
+							</li>
+							<li>
+								<a href="#"><i class="fab fa-twitter wow fadeInUp animated" data-wow-delay="1s"></i></a>
+							</li>
+							<li>
+								<a href="#"><i class="fab fa-dribbble wow fadeInUp animated" data-wow-delay="1.3s"></i></a>
+							</li>
+							<li>
+								<a href="#"><i class="fab fa-behance wow fadeInUp animated" data-wow-delay="1.6s"></i></a>
+							</li>
+							<li>
+								<a href="#"><i class="fab fa-google-plus-g wow fadeInUp animated" data-wow-delay="1.9s"></i></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+	<script src="./js/script.js"></script>	
+</body>
+</html>
